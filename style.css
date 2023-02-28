@@ -186,7 +186,7 @@ header .icon i {
 /* landing */
 .landing {
     min-height: 100vh;
-    background-image: url("../imgs/landing.jpg");
+    background-image: url("imgs/landing.jpg");
     background-size: cover;
     position: relative;
 }
