@@ -226,6 +226,7 @@ header .icon i {
     background-size: cover;
     position: relative;
 }
+
 .landing .overlay {
     position: absolute;
     background-color: rgb(0 0 0 /60%);
@@ -233,6 +234,7 @@ header .icon i {
     width: 100%;
     left: 0;
     bottom: 0;
+    /* display: none; */
 }
 .landing .text {
     position: absolute;
@@ -242,7 +244,6 @@ header .icon i {
     padding: 50px 50px 50px 120px;
     background-color: var(--trans-color);
     color: white;
-
 }
 .landing .text h2 {
     font-size: 32px;
@@ -253,6 +254,28 @@ header .icon i {
 .landing .text p {
     line-height: 2;
     font-size: 14px;
+}
+@media (max-width:500px) {
+    .landing {
+        background-image: url(imgs/owl.jfif);
+
+    }
+    .landing  .text{
+        background-color: rgb(15 116 143 /40%);
+    
+    }
+    .landing .text h2 {
+        font-size: 20px;
+    }
+    .landing .text p {
+        line-height: 1.8;
+    }
+    .text {
+        background-color: rgb(0 0 0 /0%) !important;
+    }
+    .landing .text p {
+        display: none;
+    }
 }
 .change-background {
     position: absolute;
@@ -515,6 +538,7 @@ header .icon i {
     }
     .video button {
         padding: 5px 10px;
+        display: none;
     }
 }
 /* about */
